@@ -1,23 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
-
-let questions = [
-    {
-        type: 'input',
-        message: 'what is the the employees name',
-        name: 'name'
-    },
-    {
-        type: 'input',
-        message: 'what is the employees id number',
-        name: 'id'
-    },
-    {
-        type: 'confirm',
-        message: 'Do you need to add another employee?',
-        name: 'anotherEmp'
-    }
-]
+const { questions } = require('./lib/questions')
 
 let team = []
 
@@ -29,8 +12,11 @@ function runQuestions(){
             if (res.anotherEmp === true){
                 runQuestions()
             }
+            else{
+            console.log(team)
+            }
         })
         .catch(error => console.log(error))
-    }
+}
 
-    runQuestions()
+runQuestions()
