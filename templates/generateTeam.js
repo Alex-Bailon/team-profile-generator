@@ -6,10 +6,11 @@ function generateTeam(data){
       <p class="card-text">${ data.role }</p>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">Name: ${ data.id } </li>
-      <li class="list-group-item">ID: ${ data.email } </li>
+      <li class="list-group-item">ID: ${ data.id } </li>
+      <li class="list-group-item">email: ${ data.email } </li>
       <li class="list-group-item">GitHub : ${ data.roleID } </li>
     </ul>
   </div>
 `
 }
+module.exports = generateTeam

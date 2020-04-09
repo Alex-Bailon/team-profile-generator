@@ -1,4 +1,4 @@
-function generateHTML(){
+function generateHTML(team){
     return`
     <!doctype html>
 <html lang="en">
@@ -13,7 +13,7 @@ function generateHTML(){
   <body>
     <h2 class="text-center bg-success text-white py-4" style="height: 100px;">My Team</h5>
     <div class="container">
-      <div class="row" id="team"></div>
+      <div class="row"> ${ team } </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -23,3 +23,4 @@ function generateHTML(){
 </html>
 `
 }
+module.exports = generateHTML
