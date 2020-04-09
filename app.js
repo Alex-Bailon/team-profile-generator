@@ -13,7 +13,7 @@ function runQuestions(){
                 runQuestions()
             }
             else{
-            console.log(team)
+                console.log(team)
             }
         })
         .catch(error => console.log(error))
