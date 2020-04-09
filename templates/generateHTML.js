@@ -11,7 +11,7 @@ function generateHTML(team){
     <title>My Team</title>
   </head>
   <body>
-    <h2 class="text-center bg-success text-white py-4" style="height: 100px;">My Team</h5>
+    <h2 class="text-center bg-secondary text-white py-4" style="height: 100px;">My Team</h2>
     <div class="container">
       <div class="row"> ${ team } </div>
     </div>
