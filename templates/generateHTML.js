@@ -1,3 +1,4 @@
+//function to return main html
 function generateHTML(team){
     return`
     <!doctype html>

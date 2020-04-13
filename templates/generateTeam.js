@@ -1,6 +1,9 @@
 function generateTeam(data){
+  //roleFactor will be used to determine if office#/gitgub/school will be used based on employee role
   let roleFactor = ''
+  //Will only be changed if role is 'Engineer' to make github a link
   let roleEqual = data.roleID
+  //switch case for employees role to add correct roleFactor and change roleEqual in the case of 'Engineer'
   switch(data.role){
     case 'Manager':
       roleFactor = 'Office Number';
@@ -13,6 +16,7 @@ function generateTeam(data){
       roleFactor = 'School';
       break;
   }
+  //return html with employee info
   return`
     <div class="card col-md-4 col-sm-12 mb-3 px-0">
     <div class="card-body bg-primary text-white">
